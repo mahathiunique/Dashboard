@@ -1,12 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import './index.css';  // Global styles
-import './App.css';    // Application-wide styles
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";  // ✅ correct path
+import "./index.css";
+import "./App.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
-root.render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
